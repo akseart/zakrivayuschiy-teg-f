@@ -213,7 +213,6 @@
 }
 
 
-
 .card__like-button {
   width: 130px;
   height: 38px;
@@ -384,6 +383,7 @@
   min-height: 38px;
   box-sizing: border-box;
 }
+
 .dialog-floppy-button {
   inline-size: 100%;
 }
@@ -392,10 +392,12 @@
   width: 21px;
 
 }
+
 @media (max-width: 375px) {
   .page {
     padding: 100px 0;
   }
+
   .header {
     padding: 120px 0;
     margin-bottom: 100px;
@@ -415,6 +417,7 @@
     flex-direction: column;
 
   }
+
   .button-save svg {
     width: 27px;
 

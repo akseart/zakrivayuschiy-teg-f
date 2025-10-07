@@ -1,5 +1,5 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-:root{
+:root {
   --background-gradient: repeating-linear-gradient(
       to right,
       #d3d3d3 0px,
@@ -12,7 +12,7 @@
       #d3d3d3 2px,
       transparent 2px,
       transparent 4px
-  ),linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  ), linear-gradient(to bottom, #e7e7e7, #1a1a1a);
 
   --accent-font: 'Press Start 2P';
   --main-font: 'Inter-Variable';
@@ -24,6 +24,5 @@
   --animation-fill-color: #f00;
   --animation-contour-color: black;
 
-
-  --border: 2px var(--accent-color) solid
+  --border: 2px var(--accent-color) solid;
 }
