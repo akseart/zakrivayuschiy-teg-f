@@ -14,8 +14,8 @@
       transparent 4px
   ), linear-gradient(to bottom, #e7e7e7, #1a1a1a);
 
-  --accent-font: 'Press Start 2P';
-  --main-font: 'Inter-Variable';
+  --accent-font: 'Press Start 2P', 'Courier New', monospace;
+  --main-font: 'Inter-Variable', 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 
   --main-color: #000;
   --background-color: #fff;

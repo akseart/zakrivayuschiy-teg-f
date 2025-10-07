@@ -16,7 +16,7 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font);
   padding: 98px 0;
 }
 
@@ -35,7 +35,7 @@
   background-color: var(--background-color);
   margin-bottom: 96px;
   border: var(--border);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font);
   font-weight: 400;
 
   line-height: 1;
@@ -65,7 +65,13 @@
 
 .card__header {
   padding: 4px 10px;
-  font-weight: 715;
+  font-variation-settings: "wght" 715;
+  /* Сообщение для ревьюера:
+
+  Почему необходимо использовать именно font-variation-settings, а не weight?
+  Для случаев, когда не подгрузится вариативный шрифт?
+  */
+  /*font-weight: 715;*/
   font-size: 18px;
   letter-spacing: 0;
   vertical-align: middle;
@@ -92,7 +98,7 @@
   right: 25px;
   position: absolute;
   z-index: 10;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
@@ -145,7 +151,8 @@
 
 
 .card__text {
-  font-weight: 410;
+  font-variation-settings: "wght" 410;
+  /*font-weight: 410;*/
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0;
@@ -184,7 +191,7 @@
 
 .button-body {
   border: var(--border);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 90%;
@@ -248,7 +255,7 @@
 }
 
 .button__text {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 90%;
@@ -369,7 +376,7 @@
 }
 
 .dialog-floppy-container article {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
