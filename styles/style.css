@@ -169,16 +169,23 @@
   margin-right: 25px;
   margin-bottom: 25px;
   margin-top: 25px;
-  gap: 15px;
+  gap: 5px;
+  align-items: center;
 }
 
 .card__icon-button {
-  width: 27px;
-  height: 24px;
+  height: 38px;
 
   border: 2px solid transparent;
   outline: none;
   transition: border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card__icon-button svg {
+  inline-size: 100%;
 }
 
 .card__icon-button:focus {
@@ -344,11 +351,11 @@
 
 }
 
-#dialog-save {
+.modal {
   display: none;
 }
 
-#dialog-save[open] {
+.modal[open] {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,7 +366,7 @@
   box-sizing: border-box;
 }
 
-#dialog-save[open]::backdrop {
+.modal[open]::backdrop {
   background-color: var(--accent-color);
   opacity: 0.75;
 }
@@ -375,7 +382,7 @@
   width: 39px;
 }
 
-.dialog-floppy-container article {
+.dialog-floppy-container h2 {
   font-family: var(--accent-font);
   font-weight: 400;
   font-size: 14px;
@@ -430,9 +437,11 @@
 
   }
 
-  #dialog-save[open] {
+  .modal[open] {
     padding: 30px 40px;
     inline-size: 341px;
+    /*fix для модального окна*/
+    max-width: 341px;
   }
 
 }
